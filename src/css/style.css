@@ -1,0 +1,161 @@
+@import './board.css';
+@import './vaisseaux.css';
+
+body{
+    background-color: #F0F8FF;
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+body,
+main{
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+}
+
+main,
+section {
+    margin: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 35em;
+}
+
+/*centrer les grilles*/
+#game-screen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.player-title{
+    color: #6495ED;
+}
+
+@media screen and (max-width: 1100px) {
+  #game-screen {
+    flex-direction: column;
+  }
+}
+
+/* notre box contient les bateaux */ 
+#available-ships, 
+#player-info{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  max-height: 500px;
+  padding: 5px;
+  text-align: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tip-box-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: pink;
+}
+
+.player-info,
+#firing-info {
+  margin-top: 10px;
+  font-family: Georgia;
+  text-transform: none;
+  color: gray;
+}
+
+.restart {
+  color:rgba(255, 0, 0, 0.719);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: underline;
+  margin: 5px;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #03225a70;
+  font-size: 40px;
+}
+
+.player-info{
+  font-size: 18px;
+  color: #122a7770;
+}
+  
+h1,
+h2,
+p {
+  margin: 0;
+}
+  
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+}
+  
+h2 {
+  color: var(--oc-red-7);
+  font-family: var(--headlines);
+}
+  
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+  
+button {
+  width: 170px;
+  height: 50px;
+  border-radius: 3px;
+  font-family: var(--regular);
+  /* text-transform: uppercase; */
+  font-size: 16px;
+  margin: var(--small-space);
+  border: none;
+  background-color: #0b4bc470;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+  
+/* FOOTER */
+
+footer,
+footer a {
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a:hover {
+  color: indigo;
+}
+
+footer a:visited {
+  color: pink;
+}
+  

@@ -1,0 +1,73 @@
+#vaisseau-flotte {
+    padding: 10px;
+}
+
+#vaisseau-flotte > * + * {
+    margin-top: 5px;
+}
+
+.vaisseau,
+.vaisseau-squares {
+    display: flex;
+    flex-direction: row;
+}
+
+.vaisseau {
+    width: 150px;
+    height: 35px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1832c4;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgb(1, 1, 1);
+}
+
+.vaisseau:hover {
+    background-color: rgb(101, 72, 155);
+    opacity: 0.9;
+}
+
+.vaisseau:active {
+    position: relative;
+    top: 1px;
+}
+
+.emplacement {
+    background-color: rgba(94, 96, 189, 0.692)
+}
+
+.emplacement:hover {
+    background-color: rgb(13, 61, 116);
+}
+
+.vaisseau-titre {
+    font-size: 16px;
+    color: white;
+}
+
+.small-square {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #a3990c;
+    background-color: #e8dd46;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+  
+li {
+    margin: 5px;
+}
+  
+@media screen and (max-width: 768px) {
+    #vaisseau-ships {
+        max-width: 400px;
+        height: 250px;
+    }
+}
